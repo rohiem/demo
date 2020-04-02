@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>temp html</title>
+    </head>
+    <body>
+        <h1>hello from html</h1>
+        <h1>from view</h1>
+        <h1>from models</h1>
+        <h1>form urls</h1>
+    {% for note in all_notes  %}
+        <a href="{% url 'notes:notes_detail' note.slug %}">{{note}}</a>
+        <br>
+
+    {% endfor %}
+
+    </body>
+</html>
